@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Dev Tools!</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: inherit;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+                Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            display: block;
+            background-image: url("https://eneax.github.io/learn-css-grid/assets/images/topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
+            background-size: 340px, auto;
+            min-height: calc(100vh - 100px);
+            background-attachment: fixed;
+            letter-spacing: -1px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 200px;
+            grid-gap: 20px;
+            padding: 50px 50px;
+
+        }
+
+        .grid-container>div {
+            /* display: flex; */
+            background-color: #ffc600;
+            text-align: center;
+            /* align-items: center;
+            justify-content: center; */
+            border: 5px solid rgba(0, 0, 0, 0.03);
+            /* padding: 20px 0; */
+            font-size: 35px;
+            color: #272727;
+            border-radius: 3px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+    </div>
+</body>
+
+</html>
